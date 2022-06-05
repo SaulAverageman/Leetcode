@@ -1,5 +1,6 @@
 class Solution:
     def totalNQueens(self, n: int) -> int:
+        #hard-coded; bad code
         self.out=0
         self.col=["."]*1000
         self.IND=0

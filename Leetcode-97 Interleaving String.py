@@ -1,9 +1,11 @@
 class Solution:
     def isInterleave(self, s1: str, s2: str, s3: str) -> bool:
+        if len(s1)+len(s2)!=len(s3):
+            return 0
         s1=" "+s1
         s2=" "+s2
         l1,l2,l3=len(s1),len(s2),len(s3)
-        arr=[[0 for e in s1] for e in s2]
+        arr=[[0 for e in s2] for e in s1]
         
         arr[0][0]=1
         
